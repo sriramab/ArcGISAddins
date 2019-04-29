@@ -9,14 +9,12 @@ This tool is to be used for aggregating zones by manual selection. From the sele
 ### Installation
 
 - Double click the `.esriaddin` file and follow the instructions.
-- Open ArcGIS and right click anyhwere in the empty toolbar space and select `Renumbering Toolbar`
+- Open ArcGIS and right click anyhwere in the empty toolbar space and select `Renumbering Toolbar`.  
+
+![Activate Toolbar](renumbering.png)
+
 - A toolbar with a button `Assign newID` is now available.
-
-##### Activate the toolbar...
-![Activate Toolbar](https://github.com/sriramab/ArcGISAddins/images/renumbering.png)
-
-##### After activating the toolbar...
-![Button](https://github.com/sriramab/ArcGISAddins/images/tool_renumbering.png)
+![Button](tool_renumbering.png)
 
 ### Use
 

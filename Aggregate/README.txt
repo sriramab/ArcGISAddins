@@ -1,4 +1,4 @@
-This is a stub project created by the ArcGIS Desktop Python AddIn Wizard.
+
 
 MANIFEST
 ========
