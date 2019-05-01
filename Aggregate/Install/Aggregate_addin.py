@@ -1,5 +1,6 @@
 import arcpy
 import pythonaddins
+import numpy as np
 
 class Button_assignID(object):
     """Implementation for Aggregate_addin.button (Button)"""
@@ -18,33 +19,14 @@ class Button_assignID(object):
 
         # DETECT MAX VALUE IN THAT FIELD AND ADD ONE HIGHER
 
-        def insert_max_value():
+        def get_max_value():
 
-            my_list_1 = arcpy.da.TableToNumPyArray(the_only_layer, 'NewID')
-            max_value_selection = max(my_list_1['NewID'])
-            # print "NewID = " + str(max_value_selection + 1 )
-
-            arcpy.SelectLayerByAttribute_management(the_only_layer,
-                                                    "SWITCH_SELECTION")
-            my_list_2 = arcpy.da.TableToNumPyArray(the_only_layer, 'NewID')
-            if len(my_list_2) == 0:
-                pythonaddins.MessageBox("All Features selected. Use Field "
-                                        "Calculator instead",
-                                        "Error")
-                raise Exception("All features selected, Use Field Calculator "
-                                "instead")
-
-                exit()
-            else:
-                max_value_selection_inverse = max(my_list_2['NewID'])
-            # print "NewID = " + str(max_value_selection_inverse + 1)
-
-            arcpy.SelectLayerByAttribute_management(the_only_layer,
-                                                    "SWITCH_SELECTION")
-            return max(max_value_selection, max_value_selection_inverse) + 1
+            max_value = np.amax(arcpy.da.TableToNumPyArray(
+                the_only_layer.dataSource, "NewID").astype(np.int))
+            return max_value + 1
 
         def update_value():
-            new_value = insert_max_value()
+            new_value = get_max_value()
             with arcpy.da.UpdateCursor(arcpy.mapping.ListLayers(current_mxd)[0],
                                        ['NewID']) as AttributeTable:
                 for x in AttributeTable:
