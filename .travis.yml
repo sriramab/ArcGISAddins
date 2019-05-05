@@ -11,4 +11,4 @@ script:
   - python Aggregate/makeaddin.py
   
 after_success:
-  - bash ./travis/publish.sh
+  - bash ./publish.sh
