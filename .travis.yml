@@ -9,6 +9,7 @@ python:
 cache: pip
 
 # WORK ONLY ON THE MASTER BRANCH - SAFELIST CONFIGURATION, ELSE USE except INSTEAD OF only
+# BOTH only AND except CAN ACCEPT A LIST SEPERATED BY A NEW LINE AND HYPEN
 branches:
   only:
     - master
@@ -19,11 +20,15 @@ script:
   - python ./Aggregate/makeaddin.py
   - ls ./Aggregate
   - git status
+  - git add -A
+  - git commit -m "addin created"
+  - git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
+  - git push origin master
   #- git add -A
-  #- git commit -m "addin added"
+  #- git commit -m "addin created"
   #- git push
   
 # SCRIPT THAT RUNS IF THE ABOVE COMPILATION IS SUCCESSFUL
 after_success:
   - bash ./publish.sh
-  # - bash ./make.sh
+  
