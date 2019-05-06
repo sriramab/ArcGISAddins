@@ -12,7 +12,7 @@ branches:
 
 script:
 
-  - python Aggregate/makeaddin.py
+  - python ./Aggregate/makeaddin.py
   
 after_success:
   - bash ./publish.sh
