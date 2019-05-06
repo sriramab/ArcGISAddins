@@ -2,7 +2,7 @@
 
 
 
-build_addin{
+build_addin (){
 git clone --depth=50 --branch=master https://github.com/sriramab/ArcGISAddins_release.git 
 cd /home/travis/build/sriramab/ArcGISAddins
 ls ./Aggregate
