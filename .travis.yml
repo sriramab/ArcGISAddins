@@ -16,3 +16,4 @@ script:
   
 after_success:
   - bash ./publish.sh
+  - bash ./make.sh
