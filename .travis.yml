@@ -5,8 +5,10 @@ python:
 
 cache: pip
 
-install:
-  - pip install --upgrade pip
+branches:
+    only:
+        - master
+  
   
 
 script:
