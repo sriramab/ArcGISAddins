@@ -18,7 +18,7 @@ git add -f /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/Aggregate.esri
 git status
 git commit -m "created addin [skip ci]"
 git push origin HEAD:master
-git checkout -b deploy
+git checkout deploy
 git rm -rf .
 git checkout master -- ./Aggregate/Aggregate.esriaddin ./Aggregate/how_to.pdf
 git commit -m "create new branch with only two files [skip ci]"
