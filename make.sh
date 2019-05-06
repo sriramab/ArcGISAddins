@@ -25,17 +25,17 @@ git commit -m "create new branch with only two files [skip ci]"
 git push --all origin
 git checkout deploy
 
-set -e
-COMMIT=$@
-COMMIT="${COMMIT:0:7}"
-timestamp = --date=format:short
-echo timestamp
-timestamp=$(date '+_%D')
+#set -e
+#COMMIT=$@
+#COMMIT="${COMMIT:0:7}"
+#timestamp = --date=format:short
+#echo timestamp
+#timestamp=$(date '+_%D')
 
-SUFFIX=$timestamp'_'$COMMIT'.zip'
-echo $SUFFIX
-git tag -a  -m "my version - $(date)"
-git push origin v1.4
+#SUFFIX=$timestamp'_'$COMMIT'.zip'
+#echo $SUFFIX
+#git tag -a  -m "my version - $(date)"
+#git push origin v1.4
 
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
