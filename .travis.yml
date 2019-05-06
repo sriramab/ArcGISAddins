@@ -6,8 +6,8 @@ python:
 cache: pip
 
 branches:
-    only:
-        - master
+  only:
+    - master
   
 
 script:
