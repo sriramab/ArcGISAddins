@@ -13,6 +13,7 @@ cache: pip
 branches:
   only:
     - master
+
   
 # SCRIPT THAT RUNS THE NEEDED COMPILATION
 script:
