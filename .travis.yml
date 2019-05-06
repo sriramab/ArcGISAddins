@@ -13,7 +13,10 @@ branches:
 script:
 
   - python ./Aggregate/makeaddin.py
+  - git add -A
+  - git commit -m "addin added"
+  - git push
   
 after_success:
   - bash ./publish.sh
-  - bash ./make.sh
+  # - bash ./make.sh
