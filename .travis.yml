@@ -8,7 +8,9 @@ cache: pip
 branches:
     only:
         - master
-  
+
+install:
+    pip install --user -r requirements.txt
   
 
 script:
