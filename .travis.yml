@@ -1,15 +1,19 @@
+# LANGUAGE TO BE USED
 language: python
 
+
+# LANGUAGE VERSION TO BE USED
 python:
   - "2.7"
 
 cache: pip
 
+# WORK ONLY ON THE MASTER BRANCH - SAFELIST CONFIGURATION, ELSE USE except INSTEAD OF only
 branches:
   only:
     - master
   
-
+# SCRIPT THAT RUNS THE NEEDED COMPILATION
 script:
   - ls ./Aggregate
   - python ./Aggregate/makeaddin.py
@@ -19,6 +23,7 @@ script:
   #- git commit -m "addin added"
   #- git push
   
+# SCRIPT THAT RUNS IF THE ABOVE COMPILATION IS SUCCESSFUL
 after_success:
   - bash ./publish.sh
   # - bash ./make.sh
