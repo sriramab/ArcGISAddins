@@ -11,6 +11,8 @@ ls /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate
 git remote show origin
 git add -f /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/Aggregate.esriaddin
 git status
+git commit -m "created addin"
+git push
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
 }
