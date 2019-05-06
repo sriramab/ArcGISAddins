@@ -1,6 +1,2 @@
 #!/bin/bash
-mkdir ./new
-cd touch newdocument.txt
-git add -A
-git commit -m "added new dir"
-git push origin HEAD:master
+git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git

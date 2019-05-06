@@ -14,7 +14,7 @@ script:
   - ls ./Aggregate
   - python ./Aggregate/makeaddin.py
   - ls ./Aggregate
-  #- git status
+  - git status
   #- git add -A
   #- git commit -m "addin added"
   #- git push
