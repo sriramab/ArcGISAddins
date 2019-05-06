@@ -1,1 +1,0 @@
-[![Build Status](https://travis-ci.org/sriramab/ArcGISAddins.svg?branch=master)](https://travis-ci.org/sriramab/ArcGISAddins)
