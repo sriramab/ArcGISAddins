@@ -13,6 +13,7 @@ branches:
 script:
 
   - python ./Aggregate/makeaddin.py
+  - ls ./Aggregate
   - git status
   - git add -A
   - git commit -m "addin added"
