@@ -3,8 +3,8 @@
 
 
 build_addin (){
-git clone --depth=50 --branch=master https://github.com/sriramab/ArcGISAddins.git 
-cd /home/travis/build/sriramab/ArcGISAddins
+git clone --depth=50 --branch=master https://github.com/sriramab/ArcGISAddins.git /home/travis/build/sriramab/ArcGISAddinsTemp
+cd /home/travis/build/sriramab/ArcGISAddinsTemp
 ls ./Aggregate
 python ./Aggregate/makeaddin.py
 git status
