@@ -11,7 +11,6 @@ commit_io_website_files() {
 	cd /home/travis/build/sriramab/ArcGISAddins_release
 	git remote rm origin
 	git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins_release.git
-	echo "Travis build trigger for ArcGISAddins_release at $(date)" > log.txt
 	git status
 	git add -A		
 	git commit -m "Trigger to generate ArcGISAddins_release - $(date)"
