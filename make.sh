@@ -14,7 +14,7 @@ git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISA
 git remote show origin
 git add -f /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/Aggregate.esriaddin
 git status
-git commit -m "created addin skip travis-ci"
+git commit -m "created addin [skip ci]"
 git push origin HEAD:master
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
