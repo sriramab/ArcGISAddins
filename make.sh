@@ -9,7 +9,7 @@ ls /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate
 python /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/makeaddin.py
 ls /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate
 git remote show origin
-git add /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/Aggregate.esriaddin
+git add -f /home/travis/build/sriramab/ArcGISAddinsTemp/Aggregate/Aggregate.esriaddin
 git status
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
