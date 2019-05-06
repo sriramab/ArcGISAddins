@@ -12,7 +12,7 @@ branches:
 
 script:
 
-  #- python ./Aggregate/makeaddin.py
+  - python ./Aggregate/makeaddin.py
   - ls ./Aggregate
   #- git status
   #- git add -A
