@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir new
+mkdir ./new
 git add -A
 git commit -m "added new dir"
-git push
+git push origin HEAD:master
