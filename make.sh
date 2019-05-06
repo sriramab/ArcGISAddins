@@ -34,8 +34,8 @@ git checkout deploy
 
 #SUFFIX=$timestamp'_'$COMMIT'.zip'
 #echo $SUFFIX
-#git tag -a  -m "my version - $(date)"
-#git push origin v1.4
+git tag -a v1.5 -m "my version - $(date)"
+git push origin v1.4
 
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
