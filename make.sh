@@ -21,7 +21,8 @@ git push origin HEAD:master
 git checkout -b deploy
 git rm -rf .
 git checkout master -- ./Aggregate/Aggregate.esriaddin ./Aggregate/how_to.pdf
-git commit -m "create new branch with only two files"
+git commit -m "create new branch with only two files [skip ci]"
+git push --all origin
 
 #git remote add origin https://sriramab:$sriramab_KEY@github.com/sriramab/ArcGISAddins.git
 
